@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de riesgo</title>
+    <!--BOOTSTAP 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--costumer css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Mukta:wght@600&family=Staatliches&display=swap" rel="stylesheet">
+    <!--Awesome-->
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <a ><img class="logo" src="./img/Logo-uis.png" alt="logo"></a>
+        <a class="navbar-brand" href="/">Calculadora de riesgo de diabetes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link" href="#"> ¿Qué es la diabetes? <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Acerca de nosotros</a>
+          </div>
+        </div>
+    </nav>
+
+    <section class="imagen-init"></section>
+
+    <section class="section1">
+      <div>
+        <h1>¡Bienvenido!</h1>
+          <p>Aquí podrás evaluar la tasa de riesgo que tienes de padecer diabetes.</p>
+          <p>Todo esto al responder las siguientes preguntas.</p>
+      </div>
+    </section>
+
+    <div class="container-q">
+
+      <div class="list-group">
+        <h1 class="NumPregunta">1. Primera pregunta</h1>
+        <p>Edad</p>
+        <button id="p1r1" type="button" class="list-group-item list-group-item-action">Menos de 45 años
+        </button>
+        <button id="p1r2" type="button" class="list-group-item list-group-item-action">Entre 45-54 años</button>
+        <button id="p1r3" type="button" class="list-group-item list-group-item-action">Entre 55-64 años</button>
+        <button id="p1r4" type="button" class="list-group-item list-group-item-action">Más de 64 años</button>
+      </div>
+
+      <div class="list-group">
+        <h1 class="NumPregunta">2. Segunda pregunta</h1>
+        <p> Índice de masa corporal (IMC)</p>
+        <button id="p2r1" type="button" class="list-group-item list-group-item-action">Menos de 25 Kg/m2</button>
+        <button id="p2r2" type="button" class="list-group-item list-group-item-action">Entre 25-30 Kg/m2</button>
+        <button id="p2r3" type="button" class="list-group-item list-group-item-action">Más de 30 Kg/m2</button>
+      </div>
+
+      <div class="list-group">
+        <h1 class="NumPregunta">3. Tercera pregunta</h1>
+        <p>¿Normalmente practica usted 30 minutos cada día de actividad física en el trabajo y/o en su tiempo libre (incluida la actividad diaria normal)?</p>
+        
+        <button id="p3r1" type="button" class="list-group-item list-group-item-action">Sí</button>
+        <button id="p3r2" type="button" class="list-group-item list-group-item-action">No</button>
+      
+      </div>
+      <div class="list-group">
+        <h1 class="NumPregunta">4. Cuarta pregunta</h1>
+        <p>¿Con cuánta frecuencia come usted vegetales o frutas?</p>
+
+        <button id="p4r1" type="button" class="list-group-item list-group-item-action">Todos los días</button>
+        <button id="p4r2" type="button" class="list-group-item list-group-item-action">No todos los días</button>
+        
+      </div>
+      <div class="list-group">
+        <h1 class="NumPregunta">5. Quinta pregunta</h1>
+        <p>¿Ha tomado usted medicación para la hipertensión con regularidad?</p>
+        <button id="p5r1"  type="button" class="list-group-item list-group-item-action">Sí</button>
+        <button id="p5r2" type="button" class="list-group-item list-group-item-action">No</button>
+      </div>
+
+      <div class="list-group">
+        <h1 class="NumPregunta">6. Sexta pregunta</h1>
+        <p>¿Le han encontrado alguna vez niveles altos de glucosa en sangre, por ejemplo, en un examen médico, duranta una enfermedad, durante el embarazo?</p>
+        <button id="p6r1" type="button" class="list-group-item list-group-item-action">Sí</button>
+        <button id="p6r2" type="button" class="list-group-item list-group-item-action" >No</button>
+      </div>
+
+      <div class="list-group">
+        <h1 class="NumPregunta">7. Septima pregunta</h1>
+        <p> ¿A algún miembro de su familia le han diagnosticado diabetes (tipo 1 o tipo 2)?</p>
+        <button id="p7r1" type="button" class="list-group-item list-group-item-action"> Sí: abuelos, tíos o primos-hermanos (pero no: padres, hermanos o hijos)</button>
+        <button id="p7r2" type="button" class="list-group-item list-group-item-action">Sí: padres, hermanos o hijos</button>
+        <button id="p7r3" type="button" class="list-group-item list-group-item-action">No</button>
+      </div>
+
+      <div>
+        <button type="button" id="btn1" class="btn btn-primary btn-lg btn-block">Calcular Riesgo</button>
+      </div>
+    </div>
+
+    <section>
+      <div class="respuesta" id="respuestacontainer">
+        <h2 id="respuestatext">Alto riesgo de padecer diabetes</h2>
+      </div>
+    </section>
+  
+
+    <section class="social">
+      <p>Siguenos</p>
+      <div class="links">
+          <a href="#"> <i class="fab  fa-facebook-f"></i>
+          </a>
+
+          <a href="#"> <i class="fab  fa-twitter"></i>
+          </a>
+
+          <a href="#"> <i class="fab  fa-linkedin"></i>
+          </a>
+      </div>
+
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+
+
+
+  <footer class="footer">
+
+    <h3>Diabetes Calculator Copyright 2020-2022.</h3>
+
+  </footer>
+
+</html>
